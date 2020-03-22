@@ -13,8 +13,8 @@ hfuzz = true
 version = "*"
 
 [dependencies.eth_pairings]
-# path = "../../eip1962"
-git = "https://github.com/Giulio2002/eip1962"
+path = "../../eip1962"
+# git = "https://github.com/Giulio2002/eip1962"
 features = ["gas_metering", "fuzzing_mode"]
 
 [dependencies.eth_pairings_cpp]
@@ -46,8 +46,12 @@ name = "fuzz_target_gas"
 path = "fuzz_targets/fuzz_target_gas.rs"
 
 [[bin]]
-name = "whitebox"
-path = "fuzz_targets/whitebox.rs"
+name = "arithmetics"
+path = "fuzz_targets/arithmetics.rs"
+
+[[bin]]
+name = "bilinearity"
+path = "fuzz_targets/bilinearity.rs"
 
 [profile.dev]
 opt-level = 2

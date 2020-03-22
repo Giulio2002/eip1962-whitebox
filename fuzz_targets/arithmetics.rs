@@ -17,7 +17,6 @@ fn main() {
         // Here, this slice will contain a "random" quantity of "random" data.
         fuzz!(|data: &[u8]| {
             eth_pairings::fuzz::associativity_commutativity::run(data);
-            eth_pairings::fuzz::bilinearity::run(data);
         });
     }
 }
