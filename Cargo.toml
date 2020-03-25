@@ -13,8 +13,8 @@ hfuzz = true
 version = "*"
 
 [dependencies.eth_pairings]
-path = "../../eip1962"
-# git = "https://github.com/Giulio2002/eip1962"
+# path = "../../eip1962"
+git = "https://github.com/Giulio2002/eip1962"
 features = ["gas_metering", "fuzzing_mode"]
 
 [dependencies.eth_pairings_cpp]
